@@ -3,12 +3,12 @@
   connection: local
   vars:
     NAME: "Ansible from PLAY"
-  #ars_files:
-  #- course.yaml
-  vars_prompt:
-  - name: NAME
-    prompt: please enter your name
-    private: false
+  # vars_files:
+  # - course.yaml
+  # vars_prompt:
+  # - name NAME
+  # prompt: please enter your name
+  # private: false
   tasks:
   - name: print name
     #ars:
@@ -17,6 +17,7 @@
      msg: "Hi {{ NAME }}"
 
      
+
 # 1. Args
 # 2. Task
 # 3. File
