@@ -3,13 +3,11 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
-    course: "DevOps with Ansible"
-    myIp: "192.23.89.123"
-    tagsMap:
+    tagsList:
       name: ansible
       project: roboshop
       component: catalogue
-    tagsList: [
+    tagsMAP: [
         {
             "key": "name",
             "value": "ansible"
@@ -47,5 +45,3 @@
   - name: convert YAML to JSON
     ansible.builtin.debug:
       msg: "{{ student_yaml | to_nice_json  }}"
-
- 
