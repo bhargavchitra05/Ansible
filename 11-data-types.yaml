@@ -2,23 +2,22 @@
   hosts: local
   connection: local
   vars:
-    PROGRAM: "DevSecOps with AWS" #string
-    DURATION: 140 #int/number
-    IS_LIVE: true #bool
-    DETAILS: #map/directory
+    PROGRAM: "DevSecOps with AWS" # string
+    DURATION: 140 # int/number
+    IS_LIVE: true # bool
+    DETAILS: # map/dictionary {}
       MONTHS: 4
-      TRAINER: "sivakumar Reddy"
-    TOPICS: #list -/[]
-      - Ansible
-      - Docker
-      - Kubernetes
-      - AWS
+      TRAINER: "Sivakumar Reddy"
+    TOPICS: # list -/[]
+    - Linux
+    - Shell
+    - Ansible
   tasks:
   - name: print variables
     ansible.builtin.debug:
-      msg: 
-         program: {{ PROGRAM }}
-         duration: {{ DURATION }}
-          is_live: {{ IS_LIVE }}
-          details: {{ DETAILS }}
-          topics: {{ TOPICS }}
+      msg: |
+        Program: {{ PROGRAM }}
+        Duration: {{ DURATION }}
+        Is Live?: {{ IS_LIVE }}
+        Details: {{ DETAILS }}
+        Topics: {{ TOPICS }}
